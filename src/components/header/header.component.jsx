@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import {ReactComponent as Logo} from '../../asset/crown.svg'; // this will importing the svg file as a ReactComponent and naming it Logo
 import './header.styles.scss';
 import {auth} from '../../firebase/firebase.utils';
+import CartIcon from '../../components/cart-icon/cart-icon.component';
 import { findRenderedComponentWithType } from "react-dom/test-utils";
 
 // making this a functional component
@@ -27,7 +28,7 @@ const Header = ({ currentUser}) => (
       SIGN IN
       </Link>)
     }
-   
+   <CartIcon/>
     </div>
   </div>
 )
